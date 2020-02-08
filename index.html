@@ -1,57 +1,125 @@
-<!--
-#1: Portfolio powinno mieć welcome section z id welcome-section.
-
-#2: Welcome section powinna zawierać element h1 element, który ma jakiś tekst.
-
-#3: Portfolio powinno mieć sekcję projekty z id projects.
-
-#4: Sekcja projekty powinna zawierać przynajmniej 6 elementów z klasą project-tile, w której będą umieszczone projekty
-
-#5: Sekcja projekty powinna zawierać linki do Twoich projektów
-
-#6: Portfolio powinno mieć navbar (nawigację) z id navbar
-
-#7: Navbar powinnien zawierać linki, w które mogę kliknąć, żeby poruszać się po różnych sekcjach strony
-
-#8: Portfolio powinno mieć link z id profile-link, który przekieruje mnie na stronę GitHub, gdzie mogę obejrzeć Twój kod
-
-#9: Portfolio powinno mieć 2 media query
-
-#10: Wysokość welcome section powinno wynosić 100vh
-
-#11: Navbar powinien być zawsze widoczny na stronie, nawet jak użytkownik skroluje
--->
-
-<?php
-$imie = "Tomek";
-$rok = date('Y');
-$wiek = $rok - 2008;
-?>
-
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <script src="https://kit.fontawesome.com/7bddbd4a78.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
   </head>
   <body>
-<!-- Welcome section -->
-    <p>Cześć! Jestem <?php echo $imie ?>, mam <?php echo $wiek ?> lat  i razem z
-      <a href="https://rita-s.github.io/" target="_blank">mamą</a>
-      uczę się programować.
-    </p>
+    <header>
+      <nav>
+        <ul>
+          <li> <a href="#welcome-section">Strona główna</a> </li>
+          <li> <a href="#projects">Projekty</a> </li>
+          <li> <a href="#contact">Kontakt</a> </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="welcome-section">
+     <h1>Cześć, jestem Tomek</h1>
+     <h2>Half-Front-End Developer &nbsp;<i class="fas fa-smile-wink"></i></h2>
+    </section>
 
-    <p>Interesuję się... lubię... Programowanie jest dla mnie...</p>
+    <section id="projects">
+      <p>Nazywam się Tomek, mam 12 lat i razem z <a href="https://rita-s.github.io/">mamą</a> uczę się programować.
+        Poniżej znajdziesz projekty, które wykonałem podczas ferii zimowych 2020 roku. Projekty są wstawione kolejno, zaczynając od tych, które wykonałem kiedy jeszcze prawie nic nie umiałem, a kończąc na tych, które zrobiłem po 2 tygodniach nauki.
+        W 2 tygodnie nauczyłem się HTML, CSS, Flexbox'a, podstaw Bootstrapa, JavaScript i GitHub'a.
+        Korzystałem ze wskazówek mamy, ze strony <a href="https://mastery.games/p/flexbox-zombies" target="_blank">Flexbox Zombie</a> oraz <a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a>.
+        <br>
+        <br>
+        <strong>Każdy może nauczyć się kodować!</strong>
+        <br>
+        <br>
+        Bardzo lubię układać kostkę Rubika (mój rekord to 42 sekundy).
+      </p>
+     <h2> Moje projekty</h2>
+     <div id="container">
 
-    <p>Poniżej znajdziecie moje projekty, które zrobiłem podczas ferii zimowych w 2020 roku.</p>
-<!-- Projects -->
+       <div class="project-tile">
+         <img src="1.png">
+         <p><a href="project_1/index.html" target="_blank">Pierwsze kroki</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="2.png">
+         <p><a href="project_2/index.html" target="_blank">Moja pierwsza samodzielna strona</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="3.png">
+         <p><a href="project_3/index.html" target="_blank">Nieudany eksperyment</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="4.png">
+         <p><a href="project_4/index.html" target="_blank">Stranger Things</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="5.png">
+         <p><a href="project_5/index.html" target="_blank">Kostka Rubika</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="6.png">
+         <p><a href="project_6/index.html" target="_blank">Polskie Parki Narodowe Część 1</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="7.png">
+         <p><a href="project_7/index.html" target="_blank">Polskie Parki Narodowe Część 2</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="8.png">
+         <p><a href="project_8/index.html" target="_blank">Gwiazdy i planety</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="9.png">
+         <p><a href="project_9/index.html" target="_blank">Stawonogi</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="FCC_Tribute.png">
+         <p><a href="tribute_page/index.html" target="_blank">FreeCodeCamp Tribute Page</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="FCC_Survey.png">
+         <p><a href="survey_form/index.html" target="_blank">FreeCodeCamp Survey Form</a></p>
+       </div>
+
+       <div class="project-tile">
+         <img src="FCC_Landing.png">
+         <p><a href="landing_page/index.html" target="_blank">FreeCodeCamp Landing Page</a></p>
+       </div>
+     </div>
+    </section>
 
 
+    <section id="contact">
+      <h2>Skontaktuj się ze mną</h2>
+      <p> <em> I pamiętaj że <q>Jeśli życie daje Ci cytryny, <span>zrób z nich lemoniadę</span>!</q> </em> </p>
 
-<!-- Contact -->
-    <p>Jeśli chcesz się ze mną skontaktować to możesz do mnie napisać na adres
-      <a href="mailto:tomekmilkowski4@gmail.com">e-mail</a>.
-    </p>
+      <div class="social-media">
+        <a href="https://github.com/tomek-m-coder/" target="_blank"><i class="fab fa-github">&nbsp; <p>GitHub</p></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:tomekmilkowski4@gmail.com"><i class="fas fa-at">&nbsp; <p>E-mail</p></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="tel:724-367-210"><i class="fas fa-mobile-alt">&nbsp; <p>Telefon</p></i></a>
+      </div>
 
-    <footer>&copy; <?php echo $imie ." | " . $rok?></footer>
+    </section>
+    <hr>
+    <footer> &copy; tomek-m-coder | 2020</footer>
+
   </body>
 </html>
+
+
+<!-- class="hvr-sink">
+
+<i class="fab fa-github"></i>
+<i class="fas fa-at"></i>
+<i class="fas fa-mobile-alt"></i> -->
