@@ -1,0 +1,70 @@
+body{
+  background:linear-gradient(90deg,#999, rgba(0, 0, 255, 0.3));
+}
+
+header ul{
+display:flex;
+flex-direction:row;
+padding:2rem;
+}
+
+header ul li {
+  list-style-type: none;
+  padding:1rem 3rem;
+  margin-right: 10%;
+  font-size:1.5rem;
+  box-shadow:2px 2px 20px 2px blue;
+
+}
+
+header ul li:hover {
+  box-shadow:2px 2px 20px 2px #f0f0f0;
+
+}
+header a{
+  text-decoration:none;
+  color:white;
+}
+
+section{
+  height: 170vh;
+}
+
+section ul{
+  list-style-type: "\1F44D";
+}
+
+#home{
+  height: 85vh;
+}
+
+a{
+  color: black;
+}
+
+#paj{
+
+  float: right;
+  border-radius:50%;
+  width:20%;
+}
+.owady{
+  float:left;
+  width:15%;
+}
+
+.clearfix{
+  clear:both;
+}
+
+#film1, #film2, #film3{
+  float:right;
+  border: 10px solid violet;
+  border-radius: 20px;
+}
+
+
+footer{
+  padding:1.2rem;
+  text-align:center;
+}

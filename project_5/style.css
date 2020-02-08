@@ -1,0 +1,154 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap&subset=latin-ext');
+
+/* Czcionki:
+Nagłówki: Nunito
+h1: 1.5em
+h2: 1.25em
+Text: Lato, 1em
+font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color:hsla(44,56%,70%, 0.8);
+}
+
+#container{
+  padding: 1rem;
+  margin-top: 5em;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#home, #about, #solutions, #contact{
+  padding-top: 8rem;
+}
+
+h1{
+  font-family: 'Nunito',sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+p{
+  font-size: 1rem;
+  line-height:1.4;
+  padding: 1rem 0.2rem;
+}
+
+h2{
+  font-family: 'Nunito',sans-serif;
+  font-size:1.4rem;
+  padding: 1rem 0;
+}
+
+a{
+  text-decoration:none;
+  color:rgba(200,160,230,1);
+  font-size:1.6rem;
+}
+
+a:hover{
+  color: yellow;
+}
+
+ul li{
+  display: inline-block;
+  padding:3rem;
+}
+
+.kostka{
+  width:10%;
+}
+
+.ramka{
+  border:5px yellow dashed;
+  float:left;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#kostka1{
+  float:left;
+}
+
+#kostka2{
+  float:right;
+}
+
+.clearfix{
+  clear:both;
+}
+
+.left{
+  float: left;
+  padding: 1em 2em;
+}
+
+nav{
+  background-color: hsla(230, 100%, 50%, .9);
+  width:100%;
+  z-index:1;
+  text-align: center;
+}
+
+main{
+  margin-top: 30px;
+}
+
+input[type=text], input[type=email]{
+  border-top: 10px solid red;
+  border-bottom: 10px solid orange;
+  border-right: 10px solid blue;
+  border-left: 10px solid green;
+  display: block;
+  height:2.2rem;
+  width:25rem;
+  margin:0.4rem 0;
+  padding: 0 1em;
+  background-color: hsla(90, 100%, 80%, .6);
+}
+
+textarea{
+border-top: 10px solid red;
+border-bottom: 10px solid orange;
+border-right: 10px solid blue;
+border-left: 10px solid green;
+display: block;
+padding: 1em;
+background-color: hsla(90, 100%, 80%, .6);
+}
+
+button{
+  padding: 1em 3em;
+  background-color: hsla(0, 100%, 50%, .2);
+  margin:0.4rem 0;
+  width: 28.2rem;
+  border-top: 10px solid red;
+  border-bottom: 10px solid orange;
+  border-right: 10px solid blue;
+  border-left: 10px solid green;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+input[type=text], input[type=email], textarea, button{
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+footer{
+  height:3rem;
+  text-align:center;
+  background-color:gray;
+  padding:1rem;
+  font-size: 1rem;
+  line-height: 3rem;
+}

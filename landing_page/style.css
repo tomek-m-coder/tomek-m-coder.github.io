@@ -1,0 +1,140 @@
+body{
+background-color:whitesmoke;
+margin: 0 auto;
+}
+.pricing{
+  width:21rem;
+  height:21rem;
+  border:1px black solid;
+  text-align:center;
+}
+.headerek{
+  background-color:#999;
+  font-size: 1.5rem;
+  padding:0.7rem;
+}
+
+.pricing button{
+  width:8rem;
+  height:2.5rem;
+  background-color:#F1C40D;
+  font-size:1rem;
+}
+
+.pricing h3{
+  font-size:2rem;
+}
+
+#header-img{
+  width:20%;
+}
+
+ul {
+  list-style-type:none;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+header ul{
+  display:flex;
+  flex-direction:row-reverse;
+  margin-top: -2.6%;
+  background-color: whitesmoke;
+  padding: 1rem 0;
+  width: 100vw;
+}
+
+header{
+    z-index: 1000;
+}
+
+header li{
+  padding-right: 5rem;
+}
+header{
+  position:fixed;
+  top:0;
+  right:0;
+
+}
+
+#pricing{
+  display: flex;
+  justify-content: space-around;
+}
+
+.memories:first-child{
+  margin-left: -150px;
+}
+
+
+
+i{
+  color: #FF8C00;
+}
+
+input{
+  width: 15rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  margin: 0.8rem;
+}
+
+form button{
+  background-color: #F1C40D;
+  padding: 0.3rem 2rem;
+  margin-left: 20%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe{
+  margin: 5% auto;
+}
+
+.intro h2{
+  padding-top: 5rem;
+}
+
+#features, #how-it-works{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer{
+  margin:3rem;
+  background-color: #ddd;
+  padding: 0.5rem 0;
+  padding-right: 1rem;
+}
+footer ul{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+footer ul li{
+    padding: 0 1rem;
+}
+
+footer p{
+  text-align: right;
+  color: #444;
+}
+
+
+@media only screen and (max-width: 1035px){
+  .pricing{
+    width: 18rem;
+  }
+}

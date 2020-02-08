@@ -1,0 +1,25 @@
+body{
+  background:url("stars.jpg");
+}
+
+ p, footer{
+  color:white;
+  text-align:center;
+  font-size:1.2rem;
+  padding:2rem;
+}
+
+h1{
+  font-size:5rem;
+  color:white;
+  text-align:center;
+}
+
+p, a{
+  line-height:1.5;
+  color:white;
+}
+
+.video{
+  text-align: center;
+}

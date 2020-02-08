@@ -1,0 +1,63 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap&subset=latin-ext');
+
+body{
+  background: url(park.jpeg) no-repeat, linear-gradient(90deg, #6de590, #e67478);
+    background-blend-mode: multiply;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+li{
+  float:left;
+  background-color: black;
+  opacity:0.8;
+  width: 18rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  display: block;
+}
+
+ul li ul li{
+  display: none;
+}
+
+ul li:hover{
+  display: block;
+  background-color: green;
+}
+
+ul li:hover ul li{
+  display: block;
+  background-color: green;
+}
+
+ul li{
+  display: block;
+}
+
+li a{
+  color:white;
+  text-decoration:none;
+}
+button{
+  background-color:black;
+  color:white;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  padding-right:8rem;
+  padding-left:8rem;
+  font-size:1.5rem;
+  opacity:0.8;
+  border:1px solid #999;
+  border-radius:50px;
+  position:absolute;
+  top:50%;
+  left:30%;
+}
